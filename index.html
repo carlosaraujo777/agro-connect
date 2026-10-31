@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 AgroConnect</h1>
+        <p>Gestão inteligente para o produtor rural</p>
+    </header>
+
+    <main class="container">
+        <!-- Formulário de Cadastro -->
+        <section class="card">
+            <h2>Cadastrar Novo Produto</h2>
+            <form id="form-produto">
+                <div class="input-group">
+                    <label>Nome do Produto (ex: Soja, Milho):</label>
+                    <input type="text" id="nome" placeholder="Digite o nome..." required>
+                </div>
+                <div class="input-group">
+                    <label>Custo de Produção (R$):</label>
+                    <input type="number" id="custo" step="0.01" placeholder="Ex: 5000" required>
+                </div>
+                <div class="input-group">
+                    <label>Quantidade (Sacas/Hectares):</label>
+                    <input type="number" id="quantidade" placeholder="Ex: 100" required>
+                </div>
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+        </section>
+
+        <!-- Lista de Produtos -->
+        <section class="card">
+            <h2>Meus Produtos</h2>
+            <div id="lista-produtos" class="lista">
+                <!-- O JS vai preencher aqui -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

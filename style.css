@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid #30363d;
+    background-color: #161b22;
+}
+
+header h1 {
+    color: #3fb950;
+    font-size: 2.5rem;
+}
+
+header p {
+    color: #f1f2f3;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.card h2 {
+    color: #279d00;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #037901;
+    background-color: #0d1117;
+    color: white;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #009e20;
+    color: rgb(227, 225, 225);
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2ea043;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.produto-item {
+    background-color: #0d1117;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #3fb950;
+}
+
+.produto-item h3 {
+    color: #3fb950;
+    margin-bottom: 5px;
+}
+
+.produto-item p {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .container { grid-template-columns: 1fr; }
+}
