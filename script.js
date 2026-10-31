@@ -1,5 +1,4 @@
-const API_URL = 'http://127.0.0.1:8000/api/produtos';
-
+const API_URL = 'https://agroconnect-api-tc99.onrender.com/api/produtos';
 // 1. Função para carregar os produtos e calcular o lucro
 async function carregarProdutos() {
     const resposta = await fetch(API_URL);
